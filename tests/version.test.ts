@@ -6,11 +6,9 @@ const apiRequest = request(API_URL);
 describe('GET /version', () => {
   it('should return the application version', async () => {
     const response = await apiRequest.get('/version');
-    console.log(JSON.stringify(response, null, 2)); // Log the response body for debugging
-
-    // Type assertion for response to ensure it matches the expected shape
-    expect(response.status).toBe(200); // Check for HTTP 200
-    expect(response.text).toBeTruthy(); // Ensure 'version' is present
+    console.log(JSON.stringify(response, null, 2)); 
+    expect(response.status).toBe(200); 
+    expect(response.text).toBeTruthy(); 
   });
 });
 
