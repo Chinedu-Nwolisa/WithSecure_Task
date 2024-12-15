@@ -3,29 +3,52 @@
 This repository contains a test harness for the Triangle Calculator REST API. The tests are written using typescript.
 
 ## Setup
-## Install dependencies:
 
-Check if you have Node.js installed on your system by running the following command in the terminal:
-    node -v
+### 🖐 Requirements
 
-If Node.js is not installed, download and install Node.js v20.14.0 on your system by following the instructions on the official website:
-https://nodejs.org/en/download/
+| Dependency     | Recommended | Minimum |
+| -------------- | ----------- | ------- |
+| Node           | 20.x        | 18.x    |
+| npm            | 10.x        | 8.x     |
+| git (optional) | 2.44.x      | 1.7.x   |
 
-Check if you have npm installed on your system by running the following command in the terminal:
-    npm -v
+Please refer to the <a href="https://nodejs.org/en/download/">Node.js</a> and <a href="https://www.npmjs.com/get-npm">npm</a> page for more information. NPM versions installed by default with Node.js are supported.
 
-if not installed, download and install npm v10.7.0 on your system by following the instructions on the official website:
-https://www.npmjs.com/get-npm
+### Download project:
 
+Download the project to your computer:
 
-After installing Node.js and npm, run the following commands in the terminal to install the required packages:
-    npm install supertest
-    npm install --save-dev jest
+- Using git clone
 
+```bash
+git clone https://github.com/Chinedu-Nwolisa/WithSecure_Task.git
+```
 
-To run the test individually, use the following command: 
-    npx jest version.test.ts
-    npx jest triangle.test.ts
+**or**
+
+- Download project zip file using the link: https://github.com/Chinedu-Nwolisa/WithSecure_Task/archive/refs/heads/main.zip. Remember to unzip the file.
+
+### Install dependencies:
+
+To install all dependencies needed to run the test using the command in the root directory of the project.
+
+```bash
+npm install
+```
+
+## Testing
+
+To execution all tests, run the command in the root directory of the project after installing the dependencies.
 
 To run the whole test suite, use
-    npm test
+
+```bash
+npm test
+```
+
+To run the test individually, use the following command:
+
+```bash
+npm run test:version # version only tests
+npm run test:triangle # triangle only tests
+```
